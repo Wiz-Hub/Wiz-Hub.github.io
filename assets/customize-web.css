@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src:	url('fonts/RobotoCondensed-Regular.ttf');
+  src:	url('fonts/RobotoCondensed-Regular.ttf') format('embedded-opentype'), 
+		url('fonts/RobotoCondensed-Regular.ttf') format('woff2'), 
+		url('fonts/RobotoCondensed-Regular.ttf') format('woff'), 
+		url('fonts/RobotoCondensed-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src:	url('fonts/RobotoCondensed-Bold.ttf');
+  src:	url('fonts/RobotoCondensed-Bold.ttf') format('embedded-opentype'), 
+		url('fonts/RobotoCondensed-Bold.ttf') format('woff2'), 
+		url('fonts/RobotoCondensed-Bold.ttf') format('woff'), 
+		url('fonts/RobotoCondensed-Bold.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins-extra-light';
+  src:	url('fonts/poppins-extra-light.woff2');
+  src:	url('fonts/poppins-extra-light.woff2') format('embedded-opentype'), 
+		url('fonts/poppins-extra-light.woff2') format('woff2'), 
+		url('fonts/poppins-extra-light.woff2') format('woff'), 
+		url('fonts/poppins-extra-light.woff2') format('truetype'); 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins-light';
+  src:	url('fonts/poppins-light.woff2');
+  src:	url('fonts/poppins-light.woff2') format('embedded-opentype'), 
+		url('fonts/poppins-light.woff2') format('woff2'), 
+		url('fonts/poppins-light.woff2') format('woff'), 
+		url('fonts/poppins-light.woff2') format('truetype'); 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins-normal';
+  src:	url('fonts/poppins-normal.woff2');
+  src:	url('fonts/poppins-normal.woff2') format('embedded-opentype'), 
+		url('fonts/poppins-normal.woff2') format('woff2'), 
+		url('fonts/poppins-normal.woff2') format('woff'), 
+		url('fonts/poppins-normal.woff2') format('truetype'); 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins-bold';
+  src:	url('fonts/poppins-bold.woff2');
+  src:	url('fonts/poppins-bold.woff2') format('embedded-opentype'), 
+		url('fonts/poppins-bold.woff2') format('woff2'), 
+		url('fonts/poppins-bold.woff2') format('woff'), 
+		url('fonts/poppins-bold.woff2') format('truetype'); 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'poppins-extra-bold';
+  src:	url('fonts/poppins-extra-bold.woff2');
+  src:	url('fonts/poppins-extra-bold.woff2') format('embedded-opentype'), 
+		url('fonts/poppins-extra-bold.woff2') format('woff2'), 
+		url('fonts/poppins-extra-bold.woff2') format('woff'), 
+		url('fonts/poppins-extra-bold.woff2') format('truetype'); 
+  font-style: normal;
+}
+
+html,body{
+	height:100%;
+}
+body{
+	overflow:scroll;
+	overflow-x:hidden;
+	overflow-y:auto;
+	font-family:"poppins-normal",sans-serif;
+	color:#666666;
+}
+body,
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+p,.p{
+	font-weight:normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'RobotoCondensed-Regular', sans-serif;
+}
+h1 b,
+h1.b,
+h1.font-bold,
+h2 b,
+h2.b,
+h2.font-bold,
+h3 b,
+h3.b,
+h3.font-bold,
+h4 b,
+h4.b,
+h4.font-bold,
+h5 b,
+h5.b,
+h5.font-bold,
+h6 b,
+h6.b,
+h6.font-bold{
+	font-family: 'RobotoCondensed-Bold', arial;
+}
+h1,.h1{
+	font-size:24pt;
+}
+h2,.h2{
+	font-size:22pt;
+}
+h3,.h3{
+	font-size:20pt;
+}
+h4,.h4{
+	font-size:18pt;
+}
+h5,.h5{
+	font-size:16pt;
+}
+h6,.h6{
+	font-size:14pt;
+}
+body, p, .p{
+	font-size:12pt !important;
+}
+small, .small{
+	font-size:9pt !important;
+}
+
+.font-extra-light{
+	font-family: 'poppins-extra-light';
+}
+.font-light{
+	font-family: 'poppins-light';
+}
+.font-normal{
+	font-family: 'poppins-normal';
+}
+b, strong,
+.font-bold{
+	font-family: 'poppins-bold';
+}
+.font-extra-bold{
+	font-family: 'poppins-extra-bold';
+}
+
+.text-overflow-line-1,
+.text-overflow-line-2,
+.text-overflow-line-3,
+.text-overflow-line-4,
+.text-overflow-line-5,
+.text-overflow-line-6{
+	display: block;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text-overflow-line-1{
+	-webkit-line-clamp: 1;
+}
+.text-overflow-line-2{
+	-webkit-line-clamp: 2;
+}
+.text-overflow-line-3{
+	-webkit-line-clamp: 3;
+}
+.text-overflow-line-4{
+	-webkit-line-clamp: 4;
+}
+.text-overflow-line-5{
+	-webkit-line-clamp: 5;
+}
+.text-overflow-line-6{
+	-webkit-line-clamp: 6;
+}
+.btn, a, button, input[type=submit], input[type=button]{
+	cursor:pointer !important;
+	text-decoration:none !important;
+}
+.form-control{
+	box-shadow:0px 0px 0px 0px !important;
+	height:auto;
+}
+table tr td{
+	vertical-align: middle !important;
+}
+
+.alert-black,
+.bg-black{
+	background:#202020;
+}
+.alert-light-gray,
+.bg-light-gray{
+	background:#EEEEEE;
+}
+.alert-gray,
+.bg-gray{
+	background:#D6D6D6;
+}
+.text-dark-gray{
+	color:#666666;
+}
+.text-gray{
+	color:#b2b2b2;
+}
+
+.text-green{
+	color:#15BF78;
+}
+.text-orange{
+	color:#FF771E;
+}
+
+.btn-outline-green{
+	border-color:#15BF78;
+	color:#15BF78;
+}
+
+.btn-outline-orange{
+	border-color:#FF771E;
+	color:#FF771E;
+}
+
+.bg-green,
+.alert-green,
+.btn-outline-green:hover,
+.btn-green{
+	background-color:#15BF78;
+}
+.btn-outline-green:hover,
+.btn-green{
+	color:#fff !important;
+}
+.btn-green:hover{
+	background-color:#11a364;
+}
+
+.bg-orange,
+.alert-orange,
+.btn-outline-orange:hover,
+.btn-orange{
+	background-color:#FF771E;
+}
+
+.btn-outline-orange:hover,
+.btn-orange{
+	color:#fff !important;
+}
+.btn-orange:hover{
+	background-color:#e06518;
+}
+
+.border-green{
+	border-color:#15BF78;
+}
+.border-oragne{
+	border-color:#FF771E;
+}
+
+.object-cover-center{
+    object-fit:cover;
+	object-position:center;
+    -o-object-fit: cover;
+	-o-object-position: center;
+	aspect-ratio: 16/9;
+	overflow: hidden; 
+	width:100%;
+}
+
+.white-space-nowrape{
+	white-space:nowrap;
+}
+.white-space-normal{
+	white-space:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px){}
+
+@media screen and (max-width: 1200px){} 
+@media screen and (max-width: 992px){} 
+@media screen and (max-width: 768px){} 
+@media screen and (max-width: 576px){}
+
+
+
+
+
+
+
+
+
+
+
+
